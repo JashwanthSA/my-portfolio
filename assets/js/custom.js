@@ -99,7 +99,7 @@ $(document).ready(function(){
 				});
 
 				$('#backend-skills').owlCarousel({
-					items:7,
+					items:6,
 					loop:true,
 					smartSpeed: 1000,
 					autoplay:true,
@@ -120,7 +120,7 @@ $(document).ready(function(){
 								items:4
 							},
 							1200:{
-								items:7
+								items:6
 							}
 						}
 					});
@@ -173,5 +173,4 @@ $(document).ready(function(){
             $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
-});	
-	
+});

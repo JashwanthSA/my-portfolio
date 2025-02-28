@@ -182,20 +182,22 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background-size:cover;
     background-position: center;
     height:890px;
-    
-    --s: 180px; /* control the size*/
-    --c1: #ffffff;
-    --c2: #d92cf9;
-    
-    background:
-      conic-gradient(at 25% 25%,#0000 75%,var(--c1) 0)
-       0 calc(3*var(--s)/4),
-      conic-gradient(#0000 75%,var(--c2) 0) 
-       calc(var(--s)/-8) calc(5*var(--s)/8),
-      conic-gradient(at 25% 75%,var(--c1) 25%,var(--c2) 0);
-    background-size: var(--s) var(--s);
+    background: linear-gradient(335deg,deepskyblue,darkviolet,white);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
   
 }
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .welcome-hero:before{
     position:absolute;
     content: " ";
@@ -653,7 +655,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     -o-transition: .5s;
     transition: .5s;
 }
-.isotope-overlay a {
+.isotope-overlay span {
     display: inline-block;
     color: #fff;
     font-size: 14px;
